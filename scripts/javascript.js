@@ -4,7 +4,6 @@ userTextForm.on("submit", function() {
       cityCurrentWeather(curCity);
       locallyStoreData(curCity);
 });
-window.onload(localStorage.clear());
 
 function captureCurrentCity() {
   event.preventDefault();
@@ -64,7 +63,6 @@ function retrieveOneCallData(lat, lon){
           units: "imperial",
       },
       success: function(response) {
-          console.log(response);
           var currentTemp = response.current.temp;
           var dt = response.current.dt;
           var weirdDateFormat = new Date(dt*1000).toISOString();
@@ -124,7 +122,6 @@ function locallyStoreData(data) {
     citiesArray.unshift(data);
     if (citiesArray.length > 10) {
         citiesArray.pop();
-        console.log(citiesArray);
     }
     localStorage.setItem('previousCities', JSON.stringify(citiesArray));
     populatePreviousSearches();
