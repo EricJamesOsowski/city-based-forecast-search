@@ -7,7 +7,7 @@ Pulls up a five day weather forecast for a given city provided by user input
 No installation necessary! Just go to the following URL where it is hosted!
 
 
-![Screenshot of weather forecast](/Assets/screenshot?raw=true "Weather Forecast")
+![Screenshot of weather forecast](/Assets/screenshot.png?raw=true "Weather Forecast")
 
 # Licensing
 
