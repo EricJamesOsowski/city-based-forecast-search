@@ -13,7 +13,7 @@ function captureCurrentCity() {
 }
 
 function getSetUvIndex(latitude, longitude){
-  var queryURL = "http://api.openweathermap.org/data/2.5/uvi?lat=" + latitude + "&lon=" + longitude + "&appid=f61cd5ab2e990136cdf830181c8dc668";
+  var queryURL = "https://api.openweathermap.org/data/2.5/uvi?lat=" + latitude + "&lon=" + longitude + "&appid=f61cd5ab2e990136cdf830181c8dc668";
   $.ajax({
       url: queryURL,
       method: "GET"
